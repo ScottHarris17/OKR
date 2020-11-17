@@ -36,6 +36,10 @@ computeCoordinates_OKR_Physiology
 %% Process Raw Traces
 % Open dataViewerApp_OKR_Physiology.mlapp to view and process data for each
 % cell at a time.
+
+% THERE ARE TWO VERSIONS OF THE DATAVIEWER APP: One does an object oriented
+% analysis, the other just uses a series of functions. Analyses are
+% largely the same, but are stored in different files.
 processData_OKR_Physiology
 
 

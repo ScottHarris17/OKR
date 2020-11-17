@@ -9,8 +9,8 @@ cells = fieldnames(data);
 for i = size(cells, 1):-1:1
     cell_i = cells{i, 1};
     if ~strcmp(cell_i, 'centerData') %one field is centerData, don't want to look at this one here
-        %% User chooses current analysis
-        h = dataViewerApp_OKR_Physiology(data, cell_i, cellListPath); %primary analysis completed w/in dataViewerApp
+        %% User chooses which dataviewer app to run
+        h = dataViewerApp_OKR_Physiology_ObjAnalysis(data, cell_i, cellListPath); %primary analysis completed w/in dataViewerApp
         %waitfor(h) %wait for user to close app to open another instance of it for the next cell
     end
 end
